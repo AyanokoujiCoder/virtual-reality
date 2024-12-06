@@ -1,0 +1,27 @@
+$ npm create vite@latest ./ -- --template react
+
+Ejecutamos: $ npm install
+
+$ npm install -D tailwindcss postcss autoprefixer
+$ npx tailwindcss init -p
+
+Pegamos en Tailwindcss:
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+App.js escrivimos: 'rafce' para que nos genere el código y para eso usamos 
+la extension de VS code: ES7+ React/Redux/React-Native snippets
+
+https://lucide.dev/guide/packages/lucide-react
+
+Ejecutamos: npm install lucide-react
